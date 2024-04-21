@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.panelgeneral.ui
+package com.example.ecotur.modules.panelgeneral.ui
 
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityPanelGeneralBinding
-import com.mariajosesapplication.app.modules.panelgeneral.`data`.viewmodel.PanelGeneralVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityPanelGeneralBinding
+import com.example.ecotur.modules.panelgeneral.`data`.viewmodel.PanelGeneralVM
 import kotlin.String
 import kotlin.Unit
 

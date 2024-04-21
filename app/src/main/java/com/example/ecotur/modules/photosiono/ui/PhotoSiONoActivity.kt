@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.photosiono.ui
+package com.example.ecotur.modules.photosiono.ui
 
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityPhotoSiONoBinding
-import com.mariajosesapplication.app.modules.photosiono.`data`.viewmodel.PhotoSiONoVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityPhotoSiONoBinding
+import com.example.ecotur.modules.photosiono.`data`.viewmodel.PhotoSiONoVM
 import kotlin.String
 import kotlin.Unit
 

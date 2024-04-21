@@ -1,9 +1,9 @@
-package com.mariajosesapplication.app.modules.panelgeneral.`data`.viewmodel
+package com.example.ecotur.modules.panelgeneral.`data`.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mariajosesapplication.app.modules.panelgeneral.`data`.model.PanelGeneralModel
+import com.example.ecotur.modules.panelgeneral.`data`.model.PanelGeneralModel
 import org.koin.core.KoinComponent
 
 class PanelGeneralVM : ViewModel(), KoinComponent {

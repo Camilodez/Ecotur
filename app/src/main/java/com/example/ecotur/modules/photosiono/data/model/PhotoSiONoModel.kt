@@ -1,3 +1,3 @@
-package com.mariajosesapplication.app.modules.photosiono.`data`.model
+package com.example.ecotur.modules.photosiono.`data`.model
 
 class PhotoSiONoModel()

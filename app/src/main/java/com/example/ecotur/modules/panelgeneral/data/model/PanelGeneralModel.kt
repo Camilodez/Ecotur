@@ -1,7 +1,7 @@
-package com.mariajosesapplication.app.modules.panelgeneral.`data`.model
+package com.example.ecotur.modules.panelgeneral.`data`.model
 
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.di.MyApp
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.di.MyApp
 import kotlin.String
 
 data class PanelGeneralModel(
