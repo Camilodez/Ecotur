@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="panelGeneralVM" type="com.mariajosesapplication.app.modules.panelgeneral.data.viewmodel.PanelGeneralVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumntemperatureOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:id="@+id/linearPanelgeneral"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_18pxv" android:paddingTop="@dimen/_18pxv">
+            <LinearLayout android:id="@+id/linearRowtemperature"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_26pxh"
+                android:paddingStart="@dimen/_26pxh"
+                android:paddingTop="@dimen/_19pxv" style="@style/groupStylewhite_1">
+                <ImageView android:id="@+id/imageTemperatureOne"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_30pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_temperature"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_temperature"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTemperature"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{panelGeneralVM.panelGeneralModel.txtTemperature}"
+                    style="@style/txtOpenSansromansemibold15" tools:text="@string/msg_d_a_lluvioso_7_c"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStackbinoculars"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_200pxv"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="@dimen/_200pxh"
+                android:paddingBottom="@dimen/_37pxv"
+                android:paddingEnd="@dimen/_33pxh"
+                android:paddingStart="@dimen/_33pxh"
+                android:paddingTop="@dimen/_37pxv" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageBinocularsOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_123pxh"
+                    android:layout_width="@dimen/_130pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_binoculars_123x130}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_binoculars_123x130"/>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearColumnprice"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_86pxh"
+                android:paddingStart="@dimen/_86pxh"
+                android:paddingTop="@dimen/_18pxv" style="@style/groupStylewhite_1">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{panelGeneralVM.panelGeneralModel.txtPrice}"
+                    style="@style/txtOpenSansromanextrabold25" tools:text="@string/msg_200_especies_vistas"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRachade"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{panelGeneralVM.panelGeneralModel.txtRachade}"
+                    style="@style/txtOpenSansromansemibold15" tools:text="@string/msg_racha_de_20_d_as"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearCaractersticas"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_41pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowsparrowhawk"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_7pxv"
+                    android:paddingEnd="@dimen/_3pxh"
+                    android:paddingStart="@dimen/_3pxh"
+                    android:paddingTop="@dimen/_7pxv" style="@style/groupStylegray_50cornerRadius">
+                    <ImageView android:id="@+id/imageSparrowhawkOne"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_sparrowhawk"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_sparrowhawk"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFauna"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{panelGeneralVM.panelGeneralModel.txtFauna}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_fauna"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageBinocularesOne"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_binoculares"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_binoculares"/>
+                <LinearLayout android:id="@+id/linearColumn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_1pxh"
+                    android:paddingStart="@dimen/_1pxh"
+                    android:paddingTop="@dimen/_14pxv" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtPrice1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{panelGeneralVM.panelGeneralModel.txtPrice1}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/msg_20_especies_vistas2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearCaractersticas1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_41pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowplantOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_5pxh"
+                    android:paddingVertical="@dimen/_5pxv" style="@style/groupStylegray_50cornerRadius">
+                    <ImageView android:id="@+id/imagePlantOne"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_width="@dimen/_43pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_plant"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_plant"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFlora"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{panelGeneralVM.panelGeneralModel.txtFlora}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_flora2"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageBinoculares"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_binoculares"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_binoculares"/>
+                <LinearLayout android:id="@+id/linearColumnOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_1pxh"
+                    android:paddingStart="@dimen/_1pxh"
+                    android:paddingTop="@dimen/_14pxv" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtPrice2"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{panelGeneralVM.panelGeneralModel.txtPrice2}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/msg_10_especies_vistas"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStacknombreone"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_263pxv"
+                android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_381pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtNombreOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{panelGeneralVM.panelGeneralModel.txtNombreOne}"
+                    style="@style/txtOpenSansromanextrabold25" tools:text="@string/msg_ltima_fotograf_a"/>
+                <LinearLayout android:id="@+id/linearRowdate"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageImagetwoOne"
+                        android:layout_gravity="bottom"
+                        android:layout_height="@dimen/_216pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="@dimen/_156pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_5pxh}"
+                        imageRes="@{@drawable/img_image_2}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image_2"/>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearColumndate"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDate"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{panelGeneralVM.panelGeneralModel.txtDate}"
+                            style="@style/txtOpenSansitalicregular9" tools:text="@string/lbl_2023_05_22"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtNombrefive"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{panelGeneralVM.panelGeneralModel.txtNombrefive}"
+                            style="@style/txtOpenSansitalicregular9" tools:text="@string/lbl_tiram_chic"/>
+                        <ImageView android:id="@+id/imageImagethreeOne"
+                            android:layout_height="@dimen/_125pxh"
+                            android:layout_width="@dimen/_224pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_5pxh}"
+                            imageRes="@{@drawable/img_image_3}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image_3"/>
+                        <ImageView android:id="@+id/imageImagefourOne"
+                            android:layout_height="@dimen/_91pxh"
+                            android:layout_width="@dimen/_223pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_5pxh}"
+                            imageRes="@{@drawable/img_image_4}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image_4"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameBottombar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameStackmenOne"
+                android:layout_height="@dimen/_60pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageMenOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_60pxh"
+                    android:layout_width="@dimen/_430pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_footer"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_footer"/>
+                <LinearLayout android:id="@+id/linearRowbinoculars"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageBinoculars"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_binoculars"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_binoculars"/>
+                    <ImageView android:id="@+id/imageOphthalmology"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_ophthalmology"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ophthalmology"/>
+                    <FrameLayout android:id="@+id/frameStackhomeOne"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_42pxh"
+                        android:paddingBottom="@dimen/_15pxv"
+                        android:paddingEnd="@dimen/_6pxh"
+                        android:paddingStart="@dimen/_6pxh"
+                        android:paddingTop="@dimen/_15pxv" style="@style/groupStyleblue_gray_100">
+                        <ImageView android:id="@+id/imageHomeOne"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_width="@dimen/_30pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_home"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imagePersonOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_person"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_person"/>
+                    <ImageView android:id="@+id/imageOpenpaneOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_open_pane"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_open_pane"/>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

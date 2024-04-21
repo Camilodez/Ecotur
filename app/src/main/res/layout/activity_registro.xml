@@ -1,24 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="registroVM" type="com.example.ecotur.modules.registro.data.viewmodel.RegistroVM"/>
+    </data>
     <FrameLayout android:id="@+id/frameRegistro"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        style="@style/groupStylewhite_A700">
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
         <LinearLayout android:id="@+id/linearColumnview"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical" style="@style/groupStylegray_50">
             <View android:id="@+id/viewView"
-                android:layout_height="154.73dp"
-                android:layout_width="412.0dp"/>
+                android:layout_height="@dimen/_197pxv" android:layout_width="@dimen/_430pxh"/>
             <FrameLayout android:gravity="center_horizontal"
                 android:id="@+id/frameStackfondoone"
                 android:layout_height="@dimen/_550pxv" android:layout_width="match_parent">
@@ -27,8 +21,8 @@
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:scaleType="fitXY"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_fondo01"/>
+                    imageRes="@{@drawable/img_fondo01}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_fondo01"/>
                 <LinearLayout android:id="@+id/linearColumnusuario"
                     android:layout_gravity="bottom|center"
                     android:layout_height="wrap_content"
@@ -58,8 +52,7 @@
                         android:text="@={registroVM.registroModel.etEmailvalueOneValue}"
                         android:textColorHint="@color/blue_gray_100"
                         style="@style/etOpenSansromanregular15" tools:ignore="Autofill"/>
-                    <TextView
-                        android:ellipsize="end"
+                    <TextView android:ellipsize="end"
                         android:id="@+id/txtCorreoelectr"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_5pxh"
@@ -156,8 +149,8 @@
                         android:layout_marginStart="@dimen/_11pxh"
                         android:layout_width="match_parent"
                         android:scaleType="fitXY"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_logo_awaq"/>
+                        imageRes="@{@drawable/img_logo_awaq}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_logo_awaq"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtRegistro"
                         android:layout_height="wrap_content"
@@ -165,8 +158,7 @@
                         android:layout_width="match_parent"
                         android:singleLine="true"
                         android:text="@{registroVM.registroModel.txtRegistro}"
-                        style="@style/txtOpenSansromanregular15_2"
-                        tools:text="@string/msg_ya_tienes_una_cuenta"/>
+                        style="@style/txtOpenSansromanregular15_2" tools:text="@string/msg_ya_tienes_una_cuenta"/>
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
@@ -178,16 +170,15 @@
                 android:layout_height="@dimen/_231pxv"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_fondo02"/>
+                imageRes="@{@drawable/img_fondo02}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_fondo02"/>
             <ImageView android:id="@+id/imageImagesixOne"
                 android:layout_gravity="bottom|center"
                 android:layout_height="@dimen/_210pxh"
                 android:layout_width="@dimen/_238pxh"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_image_6"/>
+                imageRes="@{@drawable/img_image_6}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image_6"/>
         </FrameLayout>
     </FrameLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

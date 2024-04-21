@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="ingresoDeSesionVM" type="com.example.ecotur.modules.ingresodesesion.data.viewmodel.IngresoDeSesionVM"/>
+    </data>
     <FrameLayout android:id="@+id/frameIngresoDeSesiN"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -163,4 +160,4 @@
                 tools:ignore="ContentDescription" tools:src="@drawable/img_image_6"/>
         </FrameLayout>
     </FrameLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

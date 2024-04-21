@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="ecodexVM" type="com.mariajosesapplication.app.modules.ecodex.data.viewmodel.EcodexVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumndivisiNThree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameEcodx"
+            android:layout_height="@dimen/_872pxv" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameStacksparrowhaw"
+                android:layout_gravity="bottom|center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingTop="@dimen/_10pxv" style="@style/groupStylegray_50">
+                <LinearLayout android:id="@+id/linearColumnsparrowha"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_3pxv"
+                    android:paddingEnd="@dimen/_39pxh"
+                    android:paddingStart="@dimen/_39pxh"
+                    android:paddingTop="@dimen/_3pxv" style="@style/groupStylewhite_A700">
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/linearCaractersticas"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linearRowsparrowhawk"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/_9pxv"
+                            android:paddingEnd="@dimen/_3pxh"
+                            android:paddingStart="@dimen/_3pxh"
+                            android:paddingTop="@dimen/_9pxv" style="@style/groupStylegray_50cornerRadius">
+                            <ImageView
+                                android:id="@+id/imageSparrowhawkOne"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_30pxh"
+                                android:layout_width="@dimen/_43pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_sparrowhawk"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_sparrowhawk"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtFauna"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5pxv"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{ecodexVM.ecodexModel.txtFauna}"
+                                style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_fauna"/>
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:drawablePadding="@dimen/_11pxh"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnEspecies"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="@dimen/_48pxv"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_width="@dimen/_191pxh"
+                            android:paddingBottom="@dimen/_15pxv"
+                            android:paddingEnd="@dimen/_16pxh"
+                            android:paddingStart="@dimen/_7pxh"
+                            android:paddingTop="@dimen/_15pxv"
+                            android:singleLine="true"
+                            android:text="@string/msg_20_especies_vistas"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_2" tools:text="@string/msg_20_especies_vistas"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:gravity="center_horizontal"
+                        android:id="@+id/recyclerUserprofile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_4pxh"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_marginTop="@dimen/_26pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_21pxh}" tools:itemCount="6" tools:listitem="@layout/row_userprofile"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumnfiltros"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFiltros"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{ecodexVM.ecodexModel.txtFiltros}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_filtros"/>
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/linearRowviewOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_42pxh"
+                        android:layout_marginStart="@dimen/_42pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:gravity="center_vertical"
+                            android:id="@+id/linearRowfaunaOne"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" android:orientation="horizontal">
+                            <RadioGroup android:id="@+id/rgFiltros"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <RadioButton
+                                    android:buttonTint="@color/cyan_900"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/open_sans"
+                                    android:id="@+id/rbFaunaOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="@dimen/_1pxv"
+                                    android:paddingTop="@dimen/_1pxv"
+                                    android:singleLine="true"
+                                    android:text="@string/lbl_fauna2"
+                                    android:textColor="@color/black_900"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/_7pxh"
+                                    android:textStyle="normal" tools:text="@string/lbl_fauna2"/>
+                                <RadioButton
+                                    android:buttonTint="@color/white_A700"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/open_sans"
+                                    android:id="@+id/rbFlora"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_width="wrap_content"
+                                    android:paddingBottom="@dimen/_1pxv"
+                                    android:paddingTop="@dimen/_1pxv"
+                                    android:singleLine="true"
+                                    android:text="@string/lbl_flora"
+                                    android:textColor="@color/black_900"
+                                    android:textFontWeight="400"
+                                    android:textSize="@dimen/_7pxh"
+                                    android:textStyle="normal" tools:text="@string/lbl_flora"/>
+                            </RadioGroup>
+                            <View
+                                android:background="@drawable/rectangle_bg_white_a700_radius_3"
+                                android:id="@+id/viewView"
+                                android:layout_height="@dimen/_13pxh"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginStart="@dimen/_26pxh"
+                                android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_13pxh"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtOtros"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginStart="@dimen/_5pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{ecodexVM.ecodexModel.txtOtros}"
+                                style="@style/txtOpenSansromanregular7" tools:text="@string/lbl_otros"/>
+                            <View
+                                android:background="@color/blue_gray_100"
+                                android:id="@+id/lineDivisnOne"
+                                android:layout_height="@dimen/_18pxv"
+                                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_1pxh"/>
+                        </LinearLayout>
+                        <View
+                            android:background="@drawable/rectangle_bg_cyan_900_radius_3"
+                            android:id="@+id/viewViewOne"
+                            android:layout_gravity="top"
+                            android:layout_height="@dimen/_13pxh"
+                            android:layout_marginBottom="@dimen/_3pxv"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_13pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEspeciesvistas"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3pxv"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{ecodexVM.ecodexModel.txtEspeciesvistas}"
+                            style="@style/txtOpenSansromanregular7" tools:text="@string/lbl_especies_vistas"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_cyan_900_radius_3"
+                            android:id="@+id/viewViewTwo"
+                            android:layout_gravity="top"
+                            android:layout_height="@dimen/_13pxh"
+                            android:layout_marginBottom="@dimen/_3pxv"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_13pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtEspeciesno"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3pxv"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{ecodexVM.ecodexModel.txtEspeciesno}"
+                            style="@style/txtOpenSansromanregular7" tools:text="@string/msg_especies_no_vistas"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBsqueda"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{ecodexVM.ecodexModel.txtBsqueda}"
+                        style="@style/txtOpenSansromanbold12" tools:text="@string/lbl_b_squeda"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_white_a700_radius_3"
+                        android:id="@+id/viewViewThree"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_21pxv"
+                        android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_348pxh"/>
+                    <View android:id="@+id/viewViewFour"
+                        android:layout_height="@dimen/_705pxh" android:layout_width="@dimen/_430pxh"/>
+                    <FrameLayout android:id="@+id/frameStackavistamien"
+                        android:layout_height="@dimen/_100pxv" android:layout_width="match_parent">
+                        <ImageView android:id="@+id/imageImagenOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_100pxh"
+                            android:layout_marginStart="@dimen/_43pxh"
+                            android:layout_width="@dimen/_150pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_5pxh}"
+                            imageRes="@{@drawable/img_imagen}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_imagen"/>
+                        <EditText android:ellipsize="end"
+                            android:hint="@string/msg_avistamientos_400"
+                            android:id="@+id/etAvistamientosCo"
+                            android:inputType="text"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_43pxh"
+                            android:layout_width="match_parent"
+                            android:paddingEnd="@dimen/_13pxh"
+                            android:paddingStart="@dimen/_13pxh"
+                            android:singleLine="true"
+                            android:text="@={ecodexVM.ecodexModel.etAvistamientosCoValue}"
+                            android:textColorHint="@color/black_900"
+                            style="@style/etOpenSansromansemibold10" tools:ignore="Autofill"/>
+                        <View android:background="@color/blue_gray_100"
+                            android:id="@+id/lineDivisinOne"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_27pxv" android:layout_width="@dimen/_430pxh"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <View android:background="@color/blue_gray_100"
+                android:id="@+id/lineDivisinThree"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_106pxv" android:layout_width="@dimen/_429pxh"/>
+        </FrameLayout>
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameBottombar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameStackmenOne"
+                android:layout_height="@dimen/_60pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageMenOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_60pxh"
+                    android:layout_width="@dimen/_430pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_footer"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_footer"/>
+                <LinearLayout android:id="@+id/linearRowbinoculars"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackbinoculars"
+                        android:layout_height="@dimen/_60pxv"
+                        android:layout_width="@dimen/_42pxh"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_6pxh"
+                        android:paddingStart="@dimen/_6pxh"
+                        android:paddingTop="@dimen/_14pxv" style="@style/groupStyleblue_gray_100">
+                        <ImageView android:id="@+id/imageBinocularsOne"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_width="@dimen/_30pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_binoculars"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_binoculars"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageOphthalmology"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_ophthalmology"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ophthalmology"/>
+                    <ImageView android:id="@+id/imageHomeOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_home"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                    <ImageView android:id="@+id/imagePersonOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_person"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_person"/>
+                    <ImageView android:id="@+id/imageOpenpaneOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_open_pane"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_open_pane"/>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
