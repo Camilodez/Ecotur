@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="camaraVM" type="com.mariajosesapplication.app.modules.camara.data.viewmodel.CamaraVM"/>
+        <variable name="camaraVM" type="com.example.ecotur.modules.camara.data.viewmodel.CamaraVM"/>
     </data>
     <FrameLayout android:id="@+id/frameCamara"
         android:layout_height="match_parent"

@@ -1,9 +1,9 @@
-package com.mariajosesapplication.app.modules.registro.`data`.viewmodel
+package com.example.ecotur.modules.registro.`data`.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mariajosesapplication.app.modules.registro.`data`.model.RegistroModel
+import com.example.ecotur.modules.registro.`data`.model.RegistroModel
 import org.koin.core.KoinComponent
 
 class RegistroVM : ViewModel(), KoinComponent {

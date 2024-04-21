@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="ecodexVM" type="com.mariajosesapplication.app.modules.ecodex.data.viewmodel.EcodexVM"/>
+        <variable name="ecodexVM" type="com.example.ecotur.modules.ecodex.data.viewmodel.EcodexVM"/>
     </data>
     <LinearLayout android:id="@+id/linearColumndivisiNThree"
         android:layout_height="match_parent"

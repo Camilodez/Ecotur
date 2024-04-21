@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="photoSiONoVM" type="com.mariajosesapplication.app.modules.photosiono.data.viewmodel.PhotoSiONoVM"/>
+        <variable name="photoSiONoVM" type="com.example.ecotur.modules.photosiono.data.viewmodel.PhotoSiONoVM"/>
     </data>
     <FrameLayout android:id="@+id/framePhotoSiONo"
         android:layout_height="match_parent"

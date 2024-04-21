@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="panelGeneralVM" type="com.mariajosesapplication.app.modules.panelgeneral.data.viewmodel.PanelGeneralVM"/>
+        <variable name="panelGeneralVM" type="com.example.ecotur.modules.panelgeneral.data.viewmodel.PanelGeneralVM"/>
     </data>
     <LinearLayout android:id="@+id/linearColumntemperatureOne"
         android:layout_height="match_parent"

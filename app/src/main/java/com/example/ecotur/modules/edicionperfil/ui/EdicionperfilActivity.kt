@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.edicionperfil.ui
+package com.example.ecotur.modules.edicionperfil.ui
 
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityEdicionperfilBinding
-import com.mariajosesapplication.app.modules.edicionperfil.`data`.viewmodel.EdicionperfilVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityEdicionperfilBinding
+import com.example.ecotur.modules.edicionperfil.`data`.viewmodel.EdicionperfilVM
 import kotlin.String
 import kotlin.Unit
 

@@ -1,12 +1,12 @@
-package com.mariajosesapplication.app.modules.ecodex.ui
+package com.example.ecotur.modules.ecodex.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.databinding.RowUserprofileBinding
-import com.mariajosesapplication.app.modules.ecodex.`data`.model.UserprofileRowModel
+import com.example.ecotur.R
+import com.example.ecotur.databinding.RowUserprofileBinding
+import com.example.ecotur.modules.ecodex.`data`.model.UserprofileRowModel
 import kotlin.Int
 import kotlin.collections.List
 

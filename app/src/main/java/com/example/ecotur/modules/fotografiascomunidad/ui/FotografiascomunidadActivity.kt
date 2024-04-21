@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.fotografiascomunidad.ui
+package com.example.ecotur.modules.fotografiascomunidad.ui
 
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityFotografiascomunidadBinding
-import com.mariajosesapplication.app.modules.fotografiascomunidad.`data`.viewmodel.FotografiascomunidadVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityFotografiascomunidadBinding
+import com.example.ecotur.modules.fotografiascomunidad.`data`.viewmodel.FotografiascomunidadVM
 import kotlin.String
 import kotlin.Unit
 

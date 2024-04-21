@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="comunidadGeneralVM" type="com.mariajosesapplication.app.modules.comunidadgeneral.data.viewmodel.ComunidadGeneralVM"/>
+        <variable name="comunidadGeneralVM" type="com.example.ecotur.modules.comunidadgeneral.data.viewmodel.ComunidadGeneralVM"/>
     </data>
     <LinearLayout android:id="@+id/linearColumndivisiNOne"
         android:layout_height="match_parent"

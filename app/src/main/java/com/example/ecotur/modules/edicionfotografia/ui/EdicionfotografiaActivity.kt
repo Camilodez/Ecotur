@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.edicionfotografia.ui
+package com.example.ecotur.modules.edicionfotografia.ui
 
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityEdicionfotografiaBinding
-import com.mariajosesapplication.app.modules.edicionfotografia.`data`.viewmodel.EdicionfotografiaVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityEdicionfotografiaBinding
+import com.example.ecotur.modules.edicionfotografia.`data`.viewmodel.EdicionfotografiaVM
 import kotlin.String
 import kotlin.Unit
 

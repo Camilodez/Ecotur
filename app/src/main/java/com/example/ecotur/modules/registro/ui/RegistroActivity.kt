@@ -1,13 +1,13 @@
-package com.mariajosesapplication.app.modules.registro.ui
+package com.example.ecotur.modules.registro.ui
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityRegistroBinding
-import com.mariajosesapplication.app.modules.registro.`data`.viewmodel.RegistroVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityRegistroBinding
+import com.example.ecotur.modules.registro.`data`.viewmodel.RegistroVM
 import kotlin.String
 import kotlin.Unit
 

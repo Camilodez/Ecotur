@@ -1,10 +1,10 @@
-package com.mariajosesapplication.app.modules.ecodex.`data`.viewmodel
+package com.example.ecotur.modules.ecodex.`data`.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mariajosesapplication.app.modules.ecodex.`data`.model.EcodexModel
-import com.mariajosesapplication.app.modules.ecodex.`data`.model.UserprofileRowModel
+import com.example.ecotur.modules.ecodex.`data`.model.EcodexModel
+import com.example.ecotur.modules.ecodex.`data`.model.UserprofileRowModel
 import kotlin.collections.MutableList
 import org.koin.core.KoinComponent
 

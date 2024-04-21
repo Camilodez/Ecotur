@@ -1,12 +1,13 @@
-package com.mariajosesapplication.app.modules.ecodex.ui
+package com.example.ecotur.modules.ecodex.ui
 
 import android.view.View
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityEcodexBinding
-import com.mariajosesapplication.app.modules.ecodex.`data`.model.UserprofileRowModel
-import com.mariajosesapplication.app.modules.ecodex.`data`.viewmodel.EcodexVM
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityEcodexBinding
+import com.example.ecotur.modules.ecodex.`data`.model.UserprofileRowModel
+import com.example.ecotur.modules.ecodex.`data`.viewmodel.EcodexVM
+import com.example.ecotur.modules.ecodex.ui.UserprofileAdapter
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit

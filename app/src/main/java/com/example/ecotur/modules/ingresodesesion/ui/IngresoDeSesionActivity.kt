@@ -1,13 +1,13 @@
-package com.mariajosesapplication.app.modules.ingresodesesion.ui
+package com.example.ecotur.modules.ingresodesesion.ui
 
 import android.os.Handler
 import android.os.Looper
 import androidx.activity.viewModels
-import com.mariajosesapplication.app.R
-import com.mariajosesapplication.app.appcomponents.base.BaseActivity
-import com.mariajosesapplication.app.databinding.ActivityIngresoDeSesionBinding
-import com.mariajosesapplication.app.modules.ingresodesesion.`data`.viewmodel.IngresoDeSesionVM
-import com.mariajosesapplication.app.modules.registro.ui.RegistroActivity
+import com.example.ecotur.R
+import com.example.ecotur.appcomponents.base.BaseActivity
+import com.example.ecotur.databinding.ActivityIngresoDeSesionBinding
+import com.example.ecotur.modules.ingresodesesion.`data`.viewmodel.IngresoDeSesionVM
+import com.example.ecotur.modules.registro.ui.RegistroActivity
 import kotlin.String
 import kotlin.Unit
 
